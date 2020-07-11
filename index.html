@@ -53,7 +53,7 @@
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <button type="button" class="button">
+        <button type="button" class="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
@@ -428,5 +428,56 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form action="" method="post" class="form">
+
+          <svg class="form-close" data-modal-close>
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+
+          <label for="" class="form__tittle">Оставьте свои данные, мы вам перезвоним</label>
+          
+          <label class="form__field">
+              <input name="full-name" type="text" class="form__input" placeholder=" ">
+              <span class="form__label">Имя</span>
+              <svg class="form__img">
+                <use href="./images/symbol-defs.svg#icon-name"></use>
+              </svg>
+          </label>
+
+          <label class="form__field">
+            <input name="telephone" type="telephone" class="form__input" placeholder=" ">
+            <span class="form__label">Телефон</span>
+            <svg class="form__img">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="form__field">
+            <input name="email" type="email" class="form__input" placeholder=" ">
+            <span class="form__label">Почта</span>
+            <svg class="form__img">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <label class="form__field textarea">
+            <textarea name="textarea" cols="30" rows="10" class="form__input"  placeholder=" "></textarea>
+            <span class="form__textarea-label">Комментарий</span>
+          </label>
+
+          <label class="policy-agreement">
+              <input name="policy" type="checkbox" class="checkbox">
+              <svg class="checkbox__img">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
+              </svg>
+              <span>Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-conditions">Условия договора</a></span>
+          </label>
+          <button type="button" data-modal-close class="button form__button">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
