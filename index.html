@@ -420,7 +420,18 @@
             </ul>
           </div>
           <div class="footer__subscribe">
-            <p>Подпишитесь на рассылку</p>
+            <p class="social__tittle">Подпишитесь на рассылку</p>
+            <form action="" method="post" class="subscribe__form">
+              <label class="subscribe__field">
+                <input type="email" class="form__input" placeholder="E-mail">
+                <button type="submit" class="button">
+                  Подписаться
+                  <svg class="subscribe-img">
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
           </div>
         </div>
         <div class="copyright">
@@ -428,6 +439,7 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно с формой регистрации -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form action="" method="post" class="form">
@@ -474,7 +486,7 @@
               </svg>
               <span>Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-conditions">Условия договора</a></span>
           </label>
-          <button type="button" data-modal-close class="button form__button">Отправить</button>
+          <button type="submit" data-modal-close class="button form__button">Отправить</button>
         </form>
       </div>
     </div>
